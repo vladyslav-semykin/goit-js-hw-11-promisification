@@ -1,4 +1,5 @@
 // ==============  Task 2 ====================
+
 const users = [
   { name: "Mango", active: true },
   { name: "Poly", active: false },
@@ -10,6 +11,7 @@ const toggleUserState = (allUsers, userName) => {
   const updatedUsers = allUsers.map((user) =>
     user.name === userName ? { ...user, active: !user.active } : user
   );
+
   return Promise.resolve(updatedUsers);
 };
 
